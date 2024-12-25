@@ -37,3 +37,9 @@ const validPassword = () => <h1>Valid Password</h1>;
 const invalidPassword = () => <h1>Invalid Password</h1>;
 return isValid ? validPassword : invalidPassword;
 };
+
+7.styleObj:inline style
+
+<h1 style={{ color: "red", backgroundColor: "black", padding: "2rem" }}>
+
+8.
