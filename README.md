@@ -20,3 +20,8 @@ with the jsx you can write expressions inside curly brackets . the expression ca
 
 5.What is teh purpose of the key?
 When you render a list you have to a pass a key which is unique because the react understand where you update ,add or delete from the list.
+
+6:props:
+i.props /properties are arguments passed into React components.
+ii.It allow us to provide the data from parent to child.
+iii.props are passed to components via HTML attributes.

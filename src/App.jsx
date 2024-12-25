@@ -1,12 +1,16 @@
 import React from "react";
-import WelcomeMessage from "./component/welcomeMessage/WelcomeMessage";
-import ProductInfo from "./component/ProductInfo";
+import User from "./component/props/User";
 
 const App = () => {
   return (
     <div>
-      <WelcomeMessage />
-      <ProductInfo />
+      <User
+        img="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"
+        name="Manoj"
+        age={23}
+        isMarried={true}
+        hobbies={["coding", "reading", "sleeping"]}
+      />
     </div>
   );
 };
