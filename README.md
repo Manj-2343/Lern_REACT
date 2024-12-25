@@ -8,7 +8,10 @@ Jsx allows us to write html in react .JSx makes it easier to write and add HTML 
 Note:
 Babel is responsible to convert the jsx to js
 Rules:
-1.you have to return on div at a time.
-2.Close the all the html tag
-3.class=>className
-4.in form we used for =>htmlFor
+i.you have to return on div at a time.
+ii.Close the all the html tag
+iii.class=>className
+iv.in form we used for =>htmlFor
+
+3.Expression on jsx
+with the jsx you can write expressions inside curly brackets . the expression can be a react variable or property,or any other valid javascript expression. jsx will execute the expression and return the result.

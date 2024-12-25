@@ -1,15 +1,12 @@
 import React from "react";
 
 const WelcomeMessage = () => {
+  const myName = "Manoj";
+  const date = new Date();
   return (
     <div>
-      <h1> Hello world</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-        accusamus, illum corporis, magnam nostrum excepturi facere cumque
-        delectus enim eius repellendus harum, nesciunt atque sequi consectetur
-        voluptas sapiente vero cupiditate!
-      </p>
+      <h1>{`I AM ${myName} `}</h1>
+      <p>{date.toDateString()}</p>
     </div>
   );
 };
