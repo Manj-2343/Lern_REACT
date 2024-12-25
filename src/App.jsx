@@ -1,14 +1,10 @@
 import React from "react";
-import Header from "./component/header/Header";
-import Section from "./component/section/Section";
-import Footer from "./component/footer/Footer";
+import WelcomeMessage from "./component/welcomeMessage/WelcomeMessage";
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Section />
-      <Footer />
+      <WelcomeMessage />
     </div>
   );
 };
