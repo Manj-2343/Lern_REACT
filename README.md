@@ -25,3 +25,15 @@ When you render a list you have to a pass a key which is unique because the reac
 i.props /properties are arguments passed into React components.
 ii.It allow us to provide the data from parent to child.
 iii.props are passed to components via HTML attributes.
+
+for the boolean value:
+//app.js
+export const app =()=>{
+<Password isValid={true} />
+}
+//password.js
+export const password = ({ isValid }) => {
+const validPassword = () => <h1>Valid Password</h1>;
+const invalidPassword = () => <h1>Invalid Password</h1>;
+return isValid ? validPassword : invalidPassword;
+};
