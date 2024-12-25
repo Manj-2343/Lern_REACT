@@ -1,16 +1,38 @@
 import React from "react";
 
 const ProductInfo = () => {
-  const obj = {
-    name: "Laptop",
-    price: 1200,
-    available: "InStock",
-  };
+  const users = [
+    {
+      id: 1,
+      name: "John Doe",
+      email: "john@example.com",
+      age: 28,
+      isActive: true,
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      email: "jane@example.com",
+      age: 24,
+      isActive: false,
+    },
+    {
+      id: 3,
+      name: "Bob Wilson",
+      email: "bob@example.com",
+      age: 32,
+      isActive: true,
+    },
+  ];
   return (
     <div>
-      <h2>{obj.name}</h2>
-      <h3>{obj.price}</h3>
-      <h4>{obj.available}</h4>
+      {users.map(({ id, name, email, age }) => (
+        <ul key={id}>
+          <li>{name}</li>
+          <li>{email}</li>
+          <li>{age}</li>
+        </ul>
+      ))}
     </div>
   );
 };

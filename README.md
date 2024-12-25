@@ -15,3 +15,8 @@ iv.in form we used for =>htmlFor
 
 3.Expression on jsx
 with the jsx you can write expressions inside curly brackets . the expression can be a react variable or property,or any other valid javascript expression. jsx will execute the expression and return the result.
+
+4.List:In react you will render lists with some type of loop. the javascript map() array method is generally the preferred method.
+
+5.What is teh purpose of the key?
+When you render a list you have to a pass a key which is unique because the react understand where you update ,add or delete from the list.

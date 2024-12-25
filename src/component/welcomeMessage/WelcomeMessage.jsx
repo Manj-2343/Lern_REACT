@@ -1,12 +1,14 @@
 import React from "react";
 
 const WelcomeMessage = () => {
-  const myName = "Manoj";
-  const date = new Date();
+  const numbers = [1, 2, 3, 4, 5, 6];
   return (
     <div>
-      <h1>{`I AM ${myName} `}</h1>
-      <p>{date.toDateString()}</p>
+      {numbers.map((number, i) => (
+        <ul key={i}>
+          <li>{number}</li>
+        </ul>
+      ))}
     </div>
   );
 };
