@@ -1,16 +1,10 @@
 import React from "react";
-import User from "./component/props/User";
+import Button from "./component/button/Button";
 
 const App = () => {
   return (
     <div>
-      <User
-        img="https://cdn.photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg"
-        name="Manoj"
-        age={23}
-        isMarried={true}
-        hobbies={["coding", "reading", "sleeping"]}
-      />
+      <Button />
     </div>
   );
 };
