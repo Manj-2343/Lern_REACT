@@ -7,5 +7,6 @@ const CART = () => {
     <div>{items.length > 0 && <h1>you have {items.length} of fruits.</h1>}</div>
   );
 };
+ji8;
 
 export default CART;
