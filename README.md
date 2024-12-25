@@ -7,3 +7,8 @@ components are independent and reusable bits of code.They serve the same purpose
 Jsx allows us to write html in react .JSx makes it easier to write and add HTML in React.
 Note:
 Babel is responsible to convert the jsx to js
+Rules:
+1.you have to return on div at a time.
+2.Close the all the html tag
+3.class=>className
+4.in form we used for =>htmlFor
