@@ -42,4 +42,5 @@ return isValid ? validPassword : invalidPassword;
 
 <h1 style={{ color: "red", backgroundColor: "black", padding: "2rem" }}>
 
-8.
+8.react-icon
+npm install react-icons --save

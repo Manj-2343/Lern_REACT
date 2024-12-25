@@ -1,7 +1,5 @@
 import React from "react";
 import User from "./component/props/User";
-import Parent from "./component/weather/Parent";
-import Greeting from "./component/weather/Greeting";
 
 const App = () => {
   return (
@@ -13,8 +11,6 @@ const App = () => {
         isMarried={true}
         hobbies={["coding", "reading", "sleeping"]}
       />
-      <Parent isLaggedIn={true} isAdmin={false} />
-      <Greeting time={"Morning"} />
     </div>
   );
 };
