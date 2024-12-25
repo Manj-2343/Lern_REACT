@@ -44,3 +44,10 @@ return isValid ? validPassword : invalidPassword;
 
 8.react-icon
 npm install react-icons --save
+
+9.state&hook
+state is a way to store and message data that can change over time and effects how the component renders.
+we define state using the usstate hook ,which allows you to set an initial value and provides a way to update that state.
+
+10.Hooks :Hooks are new addition in react 16.8 .they let you use state and other react features without writing a class.
+11.useState():This hook allows us to track state in a functional component.state generally refers to data or properties that need to be tracking in an application.
