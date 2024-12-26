@@ -51,3 +51,6 @@ we define state using the usstate hook ,which allows you to set an initial value
 
 10.Hooks :Hooks are new addition in react 16.8 .they let you use state and other react features without writing a class.
 11.useState():This hook allows us to track state in a functional component.state generally refers to data or properties that need to be tracking in an application.
+
+12.React portal:
+Portal is sa feature that allows you to render a child component into a dom node that exists outside the hierarchy of the parent component .This can be useFul for scenarios like modals ,tootips or dropdowns,where you want to break out of the usual parent-child structure and render ina different part of the Dom.
