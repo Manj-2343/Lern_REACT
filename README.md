@@ -64,3 +64,5 @@ pasing the dat from on ecomponent to anathore
 context Api is a feature that allows you to manage and share state accross your component tree with out having to pass props down manually at every level
 16.UseReducer():
 UseReducer is hook that is similar to useState,but it is designed for more complex state objects or state transitions that involves multiple sub-values.it allows you to manage state in a functional,immutable way.
+17.useRef:
+useREf hook provides a way to accessa nd interact with Dom elements or to persisst valuees accross renders without causing a render.

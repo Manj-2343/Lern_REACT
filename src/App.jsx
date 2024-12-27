@@ -1,14 +1,14 @@
-import React, { useReducer } from "react";
-import { initialState, reducer } from "./component/useReducer/reducer";
+import React, { useRef } from "react";
 
 const App = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const inputEl = useRef();
+  const handleClick = () => {
+    inputEl.current.value = "heelo";
+  };
   return (
     <div>
-      <h1>Count:{state.count}</h1>
-      <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
-      <button onClick={() => dispatch({ type: "decrement" })}>Decrement</button>
-      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+      <input type="text" ref={inputEl} />
+      <button onClick={() => handleClick()}>Button</button>
     </div>
   );
 };
