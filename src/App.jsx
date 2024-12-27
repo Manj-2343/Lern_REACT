@@ -6,14 +6,13 @@ import ExampleTwo from "./component/newComp/ExampleTwo";
 import ExampleThree from "./component/newComp/ExampleThree";
 import TOdoList from "./component/newComp/TOdoList";
 import Profile from "./component/newComp/Profile";
+import Switch from "./component/switch/Switch";
 
 const App = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <ExampleThree />
-      <TOdoList />
-      <Profile />
+      <Switch />
     </div>
   );
 };
