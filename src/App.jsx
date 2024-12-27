@@ -1,26 +1,26 @@
-import React, { createContext, useState } from "react";
-import ComponentOne from "./component/newComp/ComponentOne";
-import ComponentTwo from "./component/newComp/ComponentTwo";
-import ExampleOne from "./component/newComp/ExampleOne";
-import ExampleTwo from "./component/newComp/ExampleTwo";
-import ExampleThree from "./component/newComp/ExampleThree";
-import TOdoList from "./component/newComp/TOdoList";
-import Profile from "./component/newComp/Profile";
-import Switch from "./component/switch/Switch";
-import UseEffect from "./component/useEffect/UseEffect";
-import AdUseEffect from "./component/useEffect/AdUseEffect";
-import ComponentA from "./component/propsDrilling/ComponentA";
-
-export const Data = createContext();
+import React, { useReducer } from "react";
+const initialState = { count: 0 };
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "increment":
+      return { ...state, count: state.count + 1 };
+    case "decrement":
+      return { ...state, count: state.count - 1 };
+    case "reset":
+      return { ...state, count: 0 };
+    default:
+      return state;
+  }
+};
 const App = () => {
-  //old way to sending the data by using context api
-  const [name, setName] = useState("Manoj kumar  Biswal");
-
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <Data.Provider value={name}>
-      <p>App:{name}</p>
-      <ComponentA />
-    </Data.Provider>
+    <div>
+      <h1>{state.count}</h1>
+      <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>decrement</button>
+      <button onClick={() => dispatch({ type: "reset" })}>reset</button>
+    </div>
   );
 };
 
