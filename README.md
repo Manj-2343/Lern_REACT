@@ -62,3 +62,5 @@ this hook allows you to perform side effect in your components .some examples of
 pasing the dat from on ecomponent to anathore
 15.Context Api:
 context Api is a feature that allows you to manage and share state accross your component tree with out having to pass props down manually at every level
+16.UseReducer():
+UseReducer is hook that is similar to useState,but it is designed for more complex state objects or state transitions that involves multiple sub-values.it allows you to manage state in a functional,immutable way.

@@ -14,7 +14,7 @@ import ComponentA from "./component/propsDrilling/ComponentA";
 export const Data = createContext();
 const App = () => {
   //old way to sending the data by using context api
-  const [name, setName] = useState("Manoj Biswal");
+  const [name, setName] = useState("Manoj kumar  Biswal");
 
   return (
     <Data.Provider value={name}>
