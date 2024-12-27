@@ -1,19 +1,26 @@
 import React from "react";
+import { Data } from "../../App";
 
-const ComponentC = ({ name }) => {
+const ComponentC = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "yellow",
-        color: "black",
-        margin: "10px 20px",
-        width: "20vw",
-        height: "20vh",
-        padding: "10px 20px",
+    <Data.Consumer>
+      {(name) => {
+        return (
+          <div
+            style={{
+              backgroundColor: "yellow",
+              color: "black",
+              margin: "10px 20px",
+              width: "20vw",
+              height: "20vh",
+              padding: "10px 20px",
+            }}
+          >
+            <p>component C : {name}</p>
+          </div>
+        );
       }}
-    >
-      <p>component C : {name}</p>
-    </div>
+    </Data.Consumer>
   );
 };
 

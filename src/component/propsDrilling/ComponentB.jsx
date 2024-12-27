@@ -1,7 +1,7 @@
 import React from "react";
 import ComponentC from "./ComponentC";
 
-const ComponentB = ({ name }) => {
+const ComponentB = () => {
   return (
     <div
       style={{
@@ -13,8 +13,8 @@ const ComponentB = ({ name }) => {
         padding: "10px 20px",
       }}
     >
-      <p>component B: {name}</p>
-      <ComponentC name={name} />
+      <p>ComponentB</p>
+      <ComponentC />
     </div>
   );
 };

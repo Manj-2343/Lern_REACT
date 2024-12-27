@@ -11,23 +11,15 @@ import UseEffect from "./component/useEffect/UseEffect";
 import AdUseEffect from "./component/useEffect/AdUseEffect";
 import ComponentA from "./component/propsDrilling/ComponentA";
 
+export const Data = createContext();
 const App = () => {
-  const [name, setName] = useState("Manoj");
-  const Data = createContext();
+  //old way to sending the data by using context api
+  const [name, setName] = useState("Manoj Biswal");
+
   return (
-    <Data.Provider
-      value={name}
-      style={{
-        backgroundColor: "purple",
-        color: "white",
-        width: "40vw",
-        height: "50vh",
-        padding: "20px 30px",
-        margin: "10px 20px",
-      }}
-    >
+    <Data.Provider value={name}>
       <p>App:{name}</p>
-      <ComponentA name={name} />
+      <ComponentA />
     </Data.Provider>
   );
 };
