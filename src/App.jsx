@@ -1,14 +1,18 @@
-import React, { useRef } from "react";
+import React, { useEffect, useState } from "react";
+import useFetch from "./component/customHooks/useFectchHook";
 
 const App = () => {
-  const inputEl = useRef();
-  const handleClick = () => {
-    inputEl.current.value = "heelo";
-  };
+  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+
+  if (!data) return <div>Loading...</div>;
+
   return (
     <div>
-      <input type="text" ref={inputEl} />
-      <button onClick={() => handleClick()}>Button</button>
+      <div>
+        {data.map((d) => (
+          <p key={d.id}>{d.title}</p>
+        ))}
+      </div>
     </div>
   );
 };

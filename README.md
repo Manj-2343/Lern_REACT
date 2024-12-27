@@ -59,10 +59,12 @@ Portal is sa feature that allows you to render a child component into a dom node
 this hook allows you to perform side effect in your components .some examples of side effects are data fetching,directly update ing the dom etc.
 ->we can not wrap a hook inside teh conditional rendering.
 14.PropsDrilling:
-pasing the dat from on ecomponent to anathore
+passing the data from on component to another component
 15.Context Api:
-context Api is a feature that allows you to manage and share state accross your component tree with out having to pass props down manually at every level
+context Api is a feature that allows you to manage and share state across your component tree with out having to pass props down manually at every level
 16.UseReducer():
 UseReducer is hook that is similar to useState,but it is designed for more complex state objects or state transitions that involves multiple sub-values.it allows you to manage state in a functional,immutable way.
 17.useRef:
-useREf hook provides a way to accessa nd interact with Dom elements or to persisst valuees accross renders without causing a render.
+useREf hook provides a way to access and interact with Dom elements or to persist values across renders without causing a render.
+18.CustomHooks:
+Custom hooks are javascript function start with the prefix use(e.g,useFetch,useForm) and can call other hooks with in them .they allow you to extract and reuse logic that involves state or side effects,making your components more readable and maintainable.
