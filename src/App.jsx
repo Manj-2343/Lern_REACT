@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
-import useFetch from "./component/customHooks/useFectchHook";
+import React from "react";
+import UseIdHook from "./component/UseIdHook/UseIdHook";
 
 const App = () => {
-  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
-
-  if (!data) return <div>Loading...</div>;
-
   return (
     <div>
-      <div>
-        {data.map((d) => (
-          <p key={d.id}>{d.title}</p>
-        ))}
-      </div>
+      <UseIdHook />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        perspiciatis recusandae iusto fugiat ea hic nesciunt corporis, tempore,
+        nulla consectetur earum placeat cum quod cupiditate incidunt aliquam
+        obcaecati. Nostrum, quasi.
+      </p>
+      <UseIdHook />
     </div>
   );
 };
