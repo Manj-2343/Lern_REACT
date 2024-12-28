@@ -1,17 +1,10 @@
 import React from "react";
-import UseIdHook from "./component/UseIdHook/UseIdHook";
+import Counter from "./component/10project/project1/Counter";
 
 const App = () => {
   return (
     <div>
-      <UseIdHook />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-        perspiciatis recusandae iusto fugiat ea hic nesciunt corporis, tempore,
-        nulla consectetur earum placeat cum quod cupiditate incidunt aliquam
-        obcaecati. Nostrum, quasi.
-      </p>
-      <UseIdHook />
+      <Counter />
     </div>
   );
 };

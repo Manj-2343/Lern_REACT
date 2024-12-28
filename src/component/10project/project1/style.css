@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: black;
+  color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+}
+.increment {
+  background-color: red;
+  color: antiquewhite;
+}
+.decrement {
+  background-color: blue;
+  color: antiquewhite;
+}
+.reset {
+  background-color: antiquewhite;
+  color: black;
+}
