@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.todo-container {
+  background-color: black;
+  color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Changed to column to stack elements vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 2rem; /* Add space between top and bottom sections */
+}
+
+.input-box {
+  padding: 1rem 6rem;
+  border: none;
+  outline: none;
+  background-color: antiquewhite;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: antiquewhite;
+}
+
+.bottom {
+  display: flex;
+}
+
+.box {
+  background-color: burlywood;
+  color: black;
+  padding: 1rem 2rem;
+}
+
+.close-btn {
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  padding: 0 1rem; /* Added padding for better button size */
+}

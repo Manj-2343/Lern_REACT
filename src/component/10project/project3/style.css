@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.meal-container {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.my-meal-section {
+  background-color: rgb(207, 89, 89);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 10px;
+  margin: 40px 10px;
+}
+.image {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}

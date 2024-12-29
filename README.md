@@ -70,3 +70,4 @@ useREf hook provides a way to access and interact with Dom elements or to persis
 Custom hooks are javascript function start with the prefix use(e.g,useFetch,useForm) and can call other hooks with in them .they allow you to extract and reuse logic that involves state or side effects,making your components more readable and maintainable.
 19.useId:
 The useId hook is used to generate unique id s for component.
+//https://www.themealdb.com->for restaurant api
