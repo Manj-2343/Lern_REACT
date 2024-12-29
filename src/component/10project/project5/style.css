@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode {
+  background-color: black;
+  color: whitesmoke;
+}
+.white-mode {
+  background-color: antiquewhite;
+  color: black;
+}
+.btn {
+  background-color: brown;
+  color: azure;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.btn1 {
+  background-color: yellowgreen;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}

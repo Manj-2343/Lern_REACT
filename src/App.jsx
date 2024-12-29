@@ -1,8 +1,5 @@
 import React from "react";
-import Counter from "./component/10project/project1/Counter";
-import Todo from "./component/10project/project2/Todo";
-import Meals from "./component/10project/project3/Meals";
-import Calculator from "./component/10project/project4/Calculator";
+import Toggle from "./component/10project/project5/Toggle";
 
 const App = () => {
   return (
@@ -10,7 +7,8 @@ const App = () => {
       {/* <Counter /> */}
       {/* <Todo />  */}
       {/* <Meals /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      <Toggle />
     </div>
   );
 };
