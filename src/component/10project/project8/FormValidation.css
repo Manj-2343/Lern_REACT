@@ -1,0 +1,160 @@
+/* SignupForm.css */
+.signup-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgb(77, 124, 217),
+    rgb(233, 196, 61),
+    rgb(193, 73, 189)
+  );
+  margin: 20px 20px;
+}
+
+.signup-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.signup-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(77, 124, 217);
+  box-shadow: 0 0 0 2px rgba(77, 124, 217, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to right, rgb(77, 124, 217), rgb(100, 150, 255));
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(77, 124, 217, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-image-container {
+    display: none; /* Hide image on mobile */
+  }
+
+  .form-container {
+    padding: 2rem;
+  }
+}
+
+/* Optional: Add loading state for button */
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Optional: Add error styles */
+.error-message {
+  color: #ff4444;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+input.error {
+  border-color: #ff4444;
+}
+
+/* Optional: Add success styles */
+input.success {
+  border-color: #00c851;
+}
+
+/* Optional: Add password strength indicator */
+.password-strength {
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: #e1e1e1;
+}
+
+.password-strength-indicator {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.errorMessage {
+  color: #ff4444;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+/* Password strength colors */
+.weak {
+  background-color: #ff4444;
+  width: 33%;
+}
+.medium {
+  background-color: #ffbb33;
+  width: 66%;
+}
+.strong {
+  background-color: #00c851;
+  width: 100%;
+}
