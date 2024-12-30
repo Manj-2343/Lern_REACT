@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "./component/10project/project5/Toggle";
+import Testimonial from "./component/10project/project6/Testimonial";
 
 const App = () => {
   return (
@@ -8,7 +8,8 @@ const App = () => {
       {/* <Todo />  */}
       {/* <Meals /> */}
       {/* <Calculator /> */}
-      <Toggle />
+      {/* <Toggle /> */}
+      <Testimonial />
     </div>
   );
 };
