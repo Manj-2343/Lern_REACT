@@ -59,6 +59,10 @@ const FomValidation = () => {
       password: password,
       confirmPassword: confirmPassword,
     });
+    setUserName("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
   };
   console.log(formData);
   return (
