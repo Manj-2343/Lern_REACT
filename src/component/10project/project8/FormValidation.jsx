@@ -17,7 +17,50 @@ const FomValidation = () => {
   const [passwordColor, setPasswordColor] = useState("");
   const [confirmPasswordColor, setConfirmPasswordColor] = useState("");
 
-  const handleSubmit = (e) => {};
+  const [formData, setFormData] = useState({
+    userName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (userName.length > 8) {
+      setErrorUserName("");
+      setUserColor("green");
+    } else {
+      setErrorUserName("UserName must be 8 letter");
+      setUserColor("red");
+    }
+    if (email.includes("@gmail")) {
+      setErrorEmail("");
+      setEmailColor("green");
+    } else {
+      setErrorEmail("you must add the @gmail");
+      setEmailColor("red");
+    }
+    if (password.length > 8) {
+      setErrorPassword("");
+      setPasswordColor("green");
+    } else {
+      setErrorPassword("your password should be 8 char long");
+    }
+    if (password !== "" && password === confirmPassword) {
+      setErrorConfirmPassword("");
+      setConfirmPasswordColor("green");
+    } else {
+      setErrorConfirmPassword("your password did not match..");
+      setConfirmPasswordColor("red");
+    }
+    setFormData({
+      userName: userName,
+      email: email,
+      password: password,
+      confirmPassword: confirmPassword,
+    });
+  };
+  console.log(formData);
   return (
     <div className="signup-container">
       <div className="signup-image-container">
@@ -38,8 +81,8 @@ const FomValidation = () => {
               type="text"
               id="username"
               name="username"
-              value={""}
-              onChange={""}
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
               placeholder="Enter your username"
               required
             />
@@ -52,8 +95,8 @@ const FomValidation = () => {
               type="email"
               id="email"
               name="email"
-              value={""}
-              onChange={""}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               required
             />
@@ -66,8 +109,8 @@ const FomValidation = () => {
               type="password"
               id="password"
               name="password"
-              value={""}
-              onChange={""}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
               required
             />
@@ -80,8 +123,8 @@ const FomValidation = () => {
               type="password"
               id="confirmPassword"
               name="confirmPassword"
-              value={""}
-              onChange={""}
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="Confirm your password"
               required
             />
@@ -92,6 +135,8 @@ const FomValidation = () => {
             Sign Up
           </button>
         </form>
+
+        <pre>{JSON.stringify(formData, null, 2)}</pre>
       </div>
     </div>
   );
